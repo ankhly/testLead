@@ -1,0 +1,67 @@
+.popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // .popup__body
+  &__body {
+    background: #ffffff;
+    border: 1px solid rgba(19, 89, 120, 0.07);
+    border-radius: 2px;
+    max-width: 320px;
+    padding: 97px 5px 70px 5px;
+    position: relative;
+    z-index: 5;
+  }
+  // .popup__close
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: url("../public/img/cancel.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  // .popup__content
+  &__content {
+  }
+}
+.content-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+  // .content-popup__title
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 104%;
+    text-transform: uppercase;
+    color: #162c4e;
+  }
+  // .content-popup__text
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+  // .content-popup__button
+  &__button {
+  }
+}

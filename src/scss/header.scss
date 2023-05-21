@@ -1,0 +1,57 @@
+.header {
+  padding: 60px 0px 0px 0px;
+  &__decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../public/img/Vector1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 20%;
+    @media (max-width: $md2+px) {
+      width: 30%;
+    }
+    @media (max-width: $md3+px) {
+      top: -15px;
+    }
+  }
+  &__decor1 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url("../public/img/Vector2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 30%;
+    height: 25%;
+    max-width: 200px;
+  }
+  // .header__body
+  &__body {
+    display: flex;
+    justify-content: center;
+  }
+  // .header__logo
+  &__logo {
+    object-fit: contain;
+    transition: all 0.3s;
+    img {
+      width: 190px;
+      height: 60px;
+    }
+    @media (max-width: $md4+px) {
+      img {
+        width: 128px;
+        height: 40px;
+      }
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
